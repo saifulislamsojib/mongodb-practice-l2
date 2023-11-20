@@ -34,7 +34,7 @@ const run = async () => {
     ) =>
       userCollection.findOne(
         { email },
-        { projection: { email: 1, [projectKey]: 1 } }
+        { projection: { email: 1, [projectKey]: 1, _id: 0 } }
       );
 
     // get all
